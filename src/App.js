@@ -27,7 +27,12 @@ export default function App() {
       </div>
       <div>
         <span className="github-link">
-          <a href="/" target="_blank" className="link" rel="noreferrer">
+          <a
+            href="https://github.com/laurapetrie/react-weather-app"
+            target="_blank"
+            className="link"
+            rel="noreferrer"
+          >
             Open-source code
           </a>
           <span className="creator-name"> by Laura Petrie</span>
