@@ -1,47 +1,13 @@
-body {
+.App body {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
 }
 
-h1 {
-  font-weight: 500;
-  color: #fff;
-}
-
-h5 {
-  color: #56508b;
-}
-
-h5:first-letter {
-  text-transform: capitalize;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* Temperature units */
-#celsius-link,
-#fahrenheit-link {
-  color: #56508b;
-}
-
-/* Current location pin */
-.current-location-icon {
-  color: #b25068;
-  font-size: 34px;
-}
-
-.current-location-icon:hover {
-  color: #b63958;
-}
-
-/* Weather app card styling */
-.container {
+.App .container {
   padding-top: 80px;
 }
 
-.card {
+.App .card {
   max-width: 800px;
   margin: 80px auto 30px auto;
   border-radius: 22px;
@@ -51,110 +17,23 @@ a {
     inset 0 0 0.2rem rgba(255, 255, 255, 0.4);
 }
 
-.card-body {
+.App .card-body {
   padding: 40px;
 }
 
-/* Search form button */
-.btn-primary {
-  color: white;
-  background-color: #b25068;
-  font-weight: 500;
-  border: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px 0px;
-}
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:focus {
-  background-color: #b63958 !important;
-}
-
-/* Current city and weather description */
-.daily-overview {
-  padding-top: 30px;
-}
-
-/* Date, time, humidity and wind speed */
-.date-time {
-  font-weight: 500;
-  font-size: 22px;
-  list-style: none;
-  color: #56508b;
-}
-
-.conditions {
-  list-style: none;
-  color: #56508b;
-}
-
-/* Current weather icon */
-.weather-temperature img {
-  margin-right: 5px;
-  height: 100px;
-  width: 100px;
-}
-
-/* Current temperature */
-.weather-temperature strong {
-  font-weight: 400;
-  font-size: 70px;
-  padding-left: 36px;
-  color: #b63958;
-}
-
-.weather-temperature .units {
-  position: relative;
-  top: -38px;
-  font-size: 16px;
-}
-
-.weather-temperature .active {
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
-
-/* Five day forecast */
-.weekly-weather-forecast {
-  text-align: center;
-  padding-top: 20px;
-}
-
-.daily-forecast-card {
-  border-radius: 22px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
-    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
-    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-  padding: 10px 0;
-}
-
-.forecast-day {
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-
-.forecast-temp {
-  font-size: 16px;
-  color: #b63958;
-}
-
 /* Footer */
-.github-link {
+.App .github-link {
   display: block;
   margin: 0 auto;
   max-width: 800px;
   text-align: left;
 }
 
-.link {
+.App .link {
   text-decoration: none;
   color: #b63958;
 }
 
-.creator-name {
+.App .creator-name {
   color: #56508b;
 }

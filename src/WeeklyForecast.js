@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./WeeklyForecast.css";
 
 export default function WeeklyForecast() {
   return (

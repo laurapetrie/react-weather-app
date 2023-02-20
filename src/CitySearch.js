@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./CitySearch.css";
 
 export default function CitySearch() {
   return (
@@ -12,6 +12,7 @@ export default function CitySearch() {
               className="form-control"
               placeholder="Please enter a location"
               autocomplete="off"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">

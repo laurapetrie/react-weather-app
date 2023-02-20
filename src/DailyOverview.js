@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./DailyOverview.css";
 
 export default function DailyOverview() {
   return (

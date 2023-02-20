@@ -1,0 +1,25 @@
+/* Search form button */
+.CitySearch .btn-primary {
+  color: white;
+  background-color: #b25068;
+  font-weight: 500;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px 0px;
+}
+.CitySearch .btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #b63958 !important;
+}
+
+/* Current location pin */
+.CitySearch .current-location-icon {
+  color: #b25068;
+  font-size: 34px;
+}
+
+.CitySearch .current-location-icon:hover {
+  color: #b63958;
+}
