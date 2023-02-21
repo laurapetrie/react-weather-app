@@ -10,18 +10,42 @@ export default function FormattedDate(props) {
     "Friday",
     "Saturday",
   ];
-  let day = days[props.day.getDay()];
-  let hours = props.day.getHours();
+  let day = days[props.date.getDay()];
+
+  let date = props.date.getDate();
+
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  let month = months[props.date.getMonth()];
+
+  let hours = props.date.getHours();
   if (hours < 10) {
     hours = `0{hours}`;
   }
-  let minutes = props.day.getMinutes();
+  let minutes = props.date.getMinutes();
   if (minutes < 10) {
     minutes = `0{minutes}`;
   }
   return (
-    <div>
-      {day} {hours}:{minutes}
+    <div className="current-date">
+      <p>
+        {day} {date} {month}
+      </p>
+      <p>
+        {hours}:{minutes}
+      </p>
     </div>
   );
 }

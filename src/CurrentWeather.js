@@ -16,7 +16,7 @@ export default function CurrentWeather(props) {
       date: new Date(response.data.time * 1000),
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
-      icon: response.data.condition.icon,
+      icon: response.data.condition.icon_url,
     });
   }
 
@@ -86,7 +86,6 @@ export default function CurrentWeather(props) {
                     <li>
                       <FormattedDate date={weatherData.date} />
                     </li>
-                    <li id="current-time">11:00</li>
                   </ul>
                   <ul className="conditions">
                     <li>
