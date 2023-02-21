@@ -18,7 +18,7 @@ export default function App() {
       <div className="container">
         <div className="card">
           <div className="card-body">
-            <CurrentWeather />
+            <CurrentWeather defaultCity="Paris" />
             <WeeklyForecast />
           </div>
         </div>
