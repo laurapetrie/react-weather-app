@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-import CitySearch from "./CitySearch";
-import DailyOverview from "./DailyOverview";
+import CurrentWeather from "./CurrentWeather";
 import WeeklyForecast from "./WeeklyForecast";
 import background from "./images/sky1.jpg";
 
@@ -19,8 +18,7 @@ export default function App() {
       <div className="container">
         <div className="card">
           <div className="card-body">
-            <CitySearch />
-            <DailyOverview />
+            <CurrentWeather />
             <WeeklyForecast />
           </div>
         </div>
