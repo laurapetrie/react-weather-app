@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #56508b;
+  --secondary-color: #b63958;
+  --tertiary-color: #b25068;
+}
+
 .App body {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
@@ -31,9 +37,9 @@
 
 .App .link {
   text-decoration: none;
-  color: #b63958;
+  color: var(--secondary-color);
 }
 
 .App .creator-name {
-  color: #56508b;
+  color: var(--primary-color);
 }

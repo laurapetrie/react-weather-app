@@ -1,0 +1,24 @@
+.SearchCity .btn-primary {
+  color: white;
+  background-color: var(--tertiary-color);
+  font-weight: 500;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 10px 0px;
+}
+.SearchCity .btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: var(--secondary-color) !important;
+}
+
+/* Current location pin */
+.SearchCity .current-location-icon {
+  color: var(--tertiary-color);
+  font-size: 34px;
+}
+
+.SearchCity .current-location-icon:hover {
+  color: var(--secondary-color);
+}

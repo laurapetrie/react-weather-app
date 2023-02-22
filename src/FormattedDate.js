@@ -40,7 +40,7 @@ export default function FormattedDate(props) {
   }
   return (
     <div className="current-date">
-      <p>
+      <p className="mb-0">
         {day} {date} {month}
       </p>
       <p>

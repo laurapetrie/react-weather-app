@@ -1,0 +1,61 @@
+/* City name and conditions */
+.DailyOverview h1 {
+  font-weight: 500;
+  color: #fff;
+}
+
+.DailyOverview h5 {
+  color: var(--primary-color);
+}
+
+.DailyOverview h5:first-letter {
+  text-transform: capitalize;
+}
+
+/* Current city weather overview */
+.DailyOverview .daily-overview {
+  padding-top: 30px;
+}
+
+/* Weather icon */
+.DailyOverview .icon-container img {
+  height: 100px;
+  width: 100px;
+}
+
+/* Temperature */
+.DailyOverview .temperature-container {
+}
+
+.DailyTemperature .daily-temp {
+  font-size: 70px;
+  font-weight: 400;
+  padding: 0 5px 0 20px;
+  color: var(--secondary-color);
+}
+
+.DailyTemperature .units {
+  position: relative;
+  top: -36px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.DailyTemperature a {
+  text-decoration: none;
+}
+
+/* Date and time */
+.DailyOverview .date-time {
+  font-weight: 500;
+  font-size: 22px;
+  list-style: none;
+  color: var(--primary-color);
+}
+
+/* Humidity and windspeed */
+.DailyOverview .conditions {
+  list-style: none;
+  color: var(--primary-color);
+}
