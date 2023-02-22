@@ -24,9 +24,6 @@
 }
 
 /* Temperature */
-.DailyOverview .temperature-container {
-}
-
 .DailyTemperature .daily-temp {
   font-size: 70px;
   font-weight: 400;
