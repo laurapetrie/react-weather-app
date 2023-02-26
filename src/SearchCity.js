@@ -6,6 +6,7 @@ import "./SearchCity.css";
 export default function SearchCity(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
+  const apiKey = "e7cba0f4344b9ae720f19t5d48co46c3";
 
   function handleResponse(response) {
     setWeatherData({
@@ -21,7 +22,6 @@ export default function SearchCity(props) {
   }
 
   function search() {
-    const apiKey = "e7cba0f4344b9ae720f19t5d48co46c3";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
@@ -33,6 +33,16 @@ export default function SearchCity(props) {
 
   function handleCityChange(event) {
     setCity(event.target.value);
+  }
+
+  function currentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(currentCity);
+  }
+
+  function currentCity(position) {
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${position.coords.longitude}&lat=${position.coords.latitude}&key=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   if (weatherData.ready) {
@@ -58,7 +68,10 @@ export default function SearchCity(props) {
             </div>
             <div className="col-1">
               <a href="/">
-                <i className="fa-solid fa-location-dot current-location-icon"></i>
+                <i
+                  className="fa-solid fa-location-dot current-location-icon"
+                  onClick={currentLocation}
+                ></i>
               </a>
             </div>
           </div>
