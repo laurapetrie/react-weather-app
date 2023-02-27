@@ -1,22 +1,29 @@
-.WeeklyForecast .weekly-weather-forecast {
+.WeeklyForecast {
   text-align: center;
   padding-top: 20px;
 }
 
-.WeeklyForecast .daily-forecast-card {
+.WeeklyForecast .WeeklyForecast-day {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.WeeklyForecast .WeeklyForecast-temperatures {
+  font-size: 16px;
+  color: #b63958;
+}
+
+.WeeklyForecast .WeeklyForecast-temperature-max {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+/* .WeeklyForecast .daily-forecast-card {
   border-radius: 22px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   padding: 10px 0;
-}
-
-.WeeklyForecast .forecast-day {
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-
-.WeeklyForecast .forecast-temp {
-  font-size: 16px;
-  color: #b63958;
-}
+} */

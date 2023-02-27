@@ -2,6 +2,7 @@ import React from "react";
 import "./DailyOverview.css";
 import FormattedDate from "./FormattedDate";
 import DailyTemperature from "./DailyTemperature";
+import WeatherIcon from "./WeatherIcon";
 
 export default function DailyOverview(props) {
   return (
@@ -16,11 +17,7 @@ export default function DailyOverview(props) {
             <div className="col-6">
               <div className="d-flex flex-row weather-temperature">
                 <div className="icon-container">
-                  <img
-                    src={props.data.icon}
-                    alt={props.data.description}
-                    id="icon"
-                  />
+                  <WeatherIcon code={props.data.iconUrl} size={52} />
                 </div>
                 <div className="temperature-container">
                   <DailyTemperature celsius={props.data.temperature} />

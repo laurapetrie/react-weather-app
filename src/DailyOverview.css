@@ -18,9 +18,8 @@
 }
 
 /* Weather icon */
-.DailyOverview .icon-container img {
-  height: 100px;
-  width: 100px;
+.DailyOverview .icon-container canvas {
+  margin-top: 25px;
 }
 
 /* Temperature */
