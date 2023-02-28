@@ -17,7 +17,7 @@ export default function DailyOverview(props) {
             <div className="col-6">
               <div className="d-flex flex-row weather-temperature">
                 <div className="icon-container">
-                  <WeatherIcon code={props.data.icon} size={52} />
+                  <WeatherIcon code={props.data.icon} size={70} />
                 </div>
                 <div className="temperature-container">
                   <DailyTemperature celsius={props.data.temperature} />

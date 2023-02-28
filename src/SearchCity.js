@@ -19,7 +19,7 @@ export default function SearchCity(props) {
       date: new Date(response.data.time * 1000),
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
-      icon: response.data.condition.icon_url,
+      icon: response.data.condition.icon,
     });
   }
 

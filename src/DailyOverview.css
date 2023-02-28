@@ -19,7 +19,7 @@
 
 /* Weather icon */
 .DailyOverview .icon-container canvas {
-  margin-top: 25px;
+  margin: 25px 10px 0 0;
 }
 
 /* Temperature */
@@ -48,6 +48,7 @@
   font-size: 22px;
   list-style: none;
   color: var(--primary-color);
+  margin-top: 20px;
 }
 
 /* Humidity and windspeed */
