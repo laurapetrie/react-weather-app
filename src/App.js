@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import SearchCity from "./SearchCity";
-import WeeklyForecast from "./WeeklyForecast";
+
 import background from "./images/sky1.jpg";
 
 export default function App() {
@@ -19,7 +19,6 @@ export default function App() {
         <div className="card">
           <div className="card-body">
             <SearchCity defaultCity="London" />
-            <WeeklyForecast />
           </div>
         </div>
       </div>

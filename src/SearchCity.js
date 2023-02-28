@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import DailyOverview from "./DailyOverview";
+import WeeklyForecast from "./WeeklyForecast";
 import "./SearchCity.css";
 
 export default function SearchCity(props) {
@@ -12,12 +13,13 @@ export default function SearchCity(props) {
     setWeatherData({
       ready: true,
       city: response.data.city,
+      coordinates: response.data.coordinates,
       description: response.data.condition.description,
       temperature: response.data.temperature.current,
       date: new Date(response.data.time * 1000),
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
-      iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
+      icon: response.data.condition.icon_url,
     });
   }
 
@@ -77,6 +79,7 @@ export default function SearchCity(props) {
           </div>
         </form>
         <DailyOverview data={weatherData} />
+        <WeeklyForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
