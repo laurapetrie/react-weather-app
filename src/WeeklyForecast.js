@@ -8,17 +8,23 @@ export default function WeeklyForecast(props) {
   const [forecast, setForecast] = useState(null);
 
   function handleResponse(response) {
-    setLoaded(response.data.daily);
-    setForecast(true);
+    setLoaded(true);
+    setForecast(response.data.daily);
   }
 
   if (loaded) {
     return (
       <div className="WeeklyForecast">
         <div className="row">
-          <div className="col">
-            <WeatherForecastDay data={forecast[0]} />
-          </div>
+          {forecast.map(function (dailyForecast, index) {
+            if (index > 1 && index < 7) {
+              return (
+                <div className="col" key={index}>
+                  <WeatherForecastDay data={dailyForecast} />
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     );
