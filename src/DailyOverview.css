@@ -22,22 +22,6 @@
   margin: 25px 10px 0 0;
 }
 
-/* Temperature */
-.DailyTemperature .daily-temp {
-  font-size: 70px;
-  font-weight: 400;
-  padding: 0 5px 0 20px;
-  color: var(--secondary-color);
-}
-
-.DailyTemperature .units {
-  position: relative;
-  top: -36px;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-}
-
 .DailyTemperature a {
   text-decoration: none;
 }
@@ -54,5 +38,26 @@
 /* Humidity and windspeed */
 .DailyOverview .conditions {
   list-style: none;
+  color: var(--primary-color);
+}
+
+/* Temperature */
+.DailyTemperature a {
+  color: var(--primary-color);
+}
+
+.DailyTemperature .daily-temp {
+  font-size: 70px;
+  font-weight: 400;
+  padding: 0 5px 0 20px;
+  color: var(--secondary-color);
+}
+
+.DailyTemperature .units {
+  position: relative;
+  top: -36px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
   color: var(--primary-color);
 }
