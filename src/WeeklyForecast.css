@@ -12,7 +12,7 @@
 
 .WeeklyForecast .WeeklyForecast-temperatures {
   font-size: 16px;
-  color: #b63958;
+  color: var(--secondary-color);
 }
 
 .WeeklyForecast .WeeklyForecast-temperature-max {
