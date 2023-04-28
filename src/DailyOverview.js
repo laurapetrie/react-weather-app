@@ -13,7 +13,7 @@ export default function DailyOverview(props) {
             <h1>{props.data.city}</h1>
             <h5 className="text-capitalize">{props.data.description}</h5>
           </div>
-          <div className="row">
+          <div className="row weather-info">
             <div className="col-6">
               <div className="d-flex flex-row weather-temperature">
                 <div className="icon-container">

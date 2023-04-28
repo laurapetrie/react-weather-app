@@ -22,3 +22,17 @@
 .SearchCity .current-location-icon:hover {
   color: var(--secondary-color);
 }
+
+@media (max-width: 578px) {
+  .SearchCity .row {
+    display: flex;
+  }
+  .SearchCity .col-8 {
+    width: 100%;
+  }
+  .SearchCity .col-3,
+  .col-1 {
+    width: 50%;
+    padding-top: 8px;
+  }
+}

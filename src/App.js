@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import SearchCity from "./SearchCity";
-
 import background from "./images/sky1.jpg";
 
 export default function App() {
@@ -11,8 +10,7 @@ export default function App() {
       style={{
         backgroundImage: `url(${background})`,
         backgroundSize: "cover",
-        width: "100vw",
-        height: "100vh",
+        height: "100%",
       }}
     >
       <div className="container">
@@ -22,7 +20,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="footer">
         <span className="github-link">
           <a
             href="https://github.com/laurapetrie/react-weather-app"

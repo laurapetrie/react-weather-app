@@ -32,3 +32,18 @@
 .WeatherForecastDay .WeeklyForecast-temperature-max {
   margin: 0;
 }
+
+@media (max-width: 576px) {
+  .WeeklyForecast .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .WeeklyForecast .forecast-card {
+    margin: 10px auto;
+  }
+  .WeatherForecastDay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

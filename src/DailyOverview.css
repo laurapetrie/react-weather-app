@@ -61,3 +61,26 @@
   text-decoration: none;
   color: var(--primary-color);
 }
+
+@media (max-width: 576px) {
+  .DailyOverview .weather-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .DailyOverview .weather-info .col-6 {
+    width: 100%;
+  }
+  .DailyOverview .icon-container canvas {
+    margin: 0;
+  }
+  .DailyOverview .weather-info ul {
+    padding: 0;
+  }
+  .DailyTemperature .daily-temp {
+    font-size: 48px;
+  }
+  .DailyTemperature .units {
+    font-size: 14px;
+    top: -24px;
+  }
+}

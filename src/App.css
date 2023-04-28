@@ -4,13 +4,17 @@
   --tertiary-color: #b25068;
 }
 
+html {
+  height: 100%;
+}
+
 .App body {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
 }
 
 .App .container {
-  padding-top: 50px;
+  padding: 30px 0;
 }
 
 .App .card {
@@ -32,14 +36,32 @@
   display: block;
   margin: 0 auto;
   max-width: 800px;
-  text-align: left;
+  text-align: center;
 }
 
 .App .link {
   text-decoration: none;
   color: var(--secondary-color);
+  font-weight: 500;
 }
 
 .App .creator-name {
-  color: var(--primary-color);
+  color: #fff;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .App .card {
+    max-width: 475px;
+    margin: 16px auto;
+  }
+  .App .card-body {
+    padding: 24px;
+  }
+  .App .container {
+    padding: 10px 20px;
+  }
+  .App .footer {
+    padding: 0 0 10px 10px;
+  }
 }
