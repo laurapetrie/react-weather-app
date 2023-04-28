@@ -2,7 +2,7 @@
 
 <p>
 This is a weather application built in React, which provides current weather information for a specific location.
-The application uses the SheCodes Weather API (https://www.shecodes.io/learn/apis/weather) to retrieve and display weather data for a particular location entered by the user.</p>
+The application uses the SheCodes Weather API (https://www.shecodes.io/learn/apis/weather) to retrieve and display weather data for a city entered by the user in the search form.</p>
 
 Project link: https://laurapetrie-react-weather-app.netlify.app/
 
@@ -11,9 +11,9 @@ Project link: https://laurapetrie-react-weather-app.netlify.app/
 
 - Searching by city will display the live weather data for the searched for city.
 - Clicking on the pin uses the geolocation API to display weather data for the users current location.
-- The app displays the temperature, weather description, humidity, wind speed and animated weather icon for the searched location.
+- The app displays the temperature, conditions, humidity, wind speed and animated weather icon for the searched city/current location.
 - The user can toggle the temperature unit between Fahrenheit and Celsius for the current day.
-- The app displays the next five days forecast with the weather icon and maximum and minimum temperatures for each day.
+- The app displays the next five days forecast with the animated weather icon and maximum and minimum temperatures for each day.
 
 ## Contributing
 
