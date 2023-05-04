@@ -4,8 +4,8 @@
   --tertiary-color: #b25068;
 }
 
-html {
-  height: 100%;
+.App {
+  min-height: 100vh;
 }
 
 .App body {
