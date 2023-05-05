@@ -33,7 +33,7 @@
   margin: 0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .WeeklyForecast .row {
     display: flex;
     flex-direction: column;

@@ -50,7 +50,7 @@
   font-weight: 500;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .App .card {
     max-width: 475px;
     margin: 16px auto;

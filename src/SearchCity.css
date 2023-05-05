@@ -23,7 +23,7 @@
   color: var(--secondary-color);
 }
 
-@media (max-width: 578px) {
+@media (max-width: 768px) {
   .SearchCity .row {
     display: flex;
   }
